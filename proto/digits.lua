@@ -5,7 +5,7 @@
 -- value within the decimal system for a given numeric base
 
 -- change this later to dynamically allocate
--- symbolic values and color indicators,    function digits()   
+-- symbolic values and color indicators,  
 -- so that "Z" is always the zenith digit,                      
 -- and always the same color                                    
 function digits()

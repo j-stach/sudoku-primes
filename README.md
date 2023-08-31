@@ -6,7 +6,7 @@ To setup, clone the repo to the desired location.<br>
 You should also install Lua if you don't already have it.<br>
 Also ensure that your terminal emulator supports 256 color values.<br>
 
-To use, `cd` into the `proto` directory, then run the script `main.lua` 
+To use, cd into the `proto` directory, then run the script `main.lua` 
 with a number between 2 and 30 as an argument:<br>
 ``` 
 lua main.lua 13 
@@ -30,6 +30,6 @@ in which case it will always be the zenith.
 - The matrix will always have two axes of symmetry because of this:
 Diagonally from (1, 1) to (zenith, zenith), and
 diagonally from (1, zenith - 1) to (zenith - 1, 1).
-- This means that at most only a quarter of the grid needs to be searched
+- This means at most only a quarter of the grid needs to be searched
 for the existence of the Z-digit.
 - (Say how rows can be excluded/ruled-out/inferred based on (n - 1) rule)

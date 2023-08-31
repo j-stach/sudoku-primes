@@ -1,14 +1,15 @@
 # sudoku-primes
-Doing this to get some experience with Lua. May make it into a prime-verifying algorithm if it yields anything good.<br>
+Doing this to get some experience with Lua. May make it into a prime-verifying algorithm if it ends up being any good.<br>
 
 ### Try me
-To setup, clone the repo to the desired location and `cd` there.<br>
+To setup, clone the repo to the desired location.<br>
 You should also install Lua if you don't already have it.<br>
+Also ensure that your terminal emulator supports 256 color values.<br>
 
-To use, run the script `proto/main.lua` while in this directory, 
+To use, `cd` into the `proto` directory, then run the script `main.lua` 
 with a number between 2 and 30 as an argument:<br>
 ``` 
-lua proto/main.lua 13 
+lua main.lua 13 
 ```
 
 ### How I work

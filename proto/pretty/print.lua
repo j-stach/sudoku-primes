@@ -41,5 +41,5 @@ function printMatrix(sumMatrix)
         io.write('\n')
     end
 end
-printMatrix(generateMatrix(13))
 
+--printMatrix(generateMatrix(13))

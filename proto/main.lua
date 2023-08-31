@@ -1,8 +1,12 @@
+local pretty = require("pretty/print")
+local digits = require("digits")
 
 -- CLI
+local base = tonumber(arg[1])
 
+printMatrix(generateMatrix(base))
 
--- TODO 
+-- TODO: Options 
 -- print monochrome
 -- print greyscale
 -- print blurred ("#")

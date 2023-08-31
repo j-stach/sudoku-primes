@@ -4,10 +4,7 @@
 -- The term "Zenith" is used below to describe the highest single-digit
 -- value within the decimal system for a given numeric base
 
--- change this later to dynamically allocate
--- symbolic values and color indicators,  
--- so that "Z" is always the zenith digit,                      
--- and always the same color                                    
+-- later map dynaminally, new types?
 function digits()
     local digits = {}
     digits[1 ] = "1"
@@ -100,7 +97,8 @@ end
 --print("Expect error:")
 --print(digitSum(420, 247)) -- Should fail
 
-
+-- Converts an expanded number back to base 10 (the index val)
+-- rename to align with expand?
 function getIndex(digit)
     for key, val in ipairs(digits()) do
         if val == digit then
@@ -109,4 +107,9 @@ function getIndex(digit)
     end
     return nil
 end
+
+--print(getIndex(W)) -- Should be "32"
+--print("Expect error:")
+--print(getIndex(69)) -- Should fail
+
 

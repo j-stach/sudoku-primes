@@ -32,4 +32,6 @@ Diagonally from (1, 1) to (zenith, zenith), and
 diagonally from (1, zenith - 1) to (zenith - 1, 1).
 - This means at most only a quarter of the grid needs to be searched
 for the existence of the Z-digit.
+- Numbers which do not share a common factor with Z will repeat
+each digit exactly once in its sequence, hence the name "sudoku-primes".
 - (Say how rows can be excluded/ruled-out/inferred based on (n - 1) rule)

@@ -15,9 +15,9 @@ lua main.lua 13
 ### How I work
 I create a numeric system using the argument as the digital base,
 representing digits greater than 9 as a letter between "A" and "T".<br>
-Then I generate a square matrix up to the "zenith" digit,
+Next I generate a square matrix up to the "zenith" digit,
 which is the greatest single digit in the number system.<br>
-I multiply each row by each column, using the mod (%) of the zenith 
+Then I multiply each row by each column, using the mod (%) of the zenith 
 to calculate the digit sum for each product.<br>
 Finally I assign each digit a color from a gradient that corresponds
 to its relative value, and print the matrix of color-coded digit sums.<br>

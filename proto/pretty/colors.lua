@@ -14,7 +14,7 @@ end
 
 -- Creates a rainbow color gradient scaled to the zenith digit
 function rainbowGradient(zenith)
-    -- TODO "I need my own function!"
+    -- TODO "I need my own function!" checkZenith
     local maxDigit = maxDigit(digits)
     if zenith > maxDigit then
         print("Error, chosen base not supported by conversion table")
@@ -32,13 +32,14 @@ function rainbowGradient(zenith)
     -- Round down for each so there's no overlap
     local gradientStep = math.floor(30 / zenith)
 
-    local gradient = {} -- init gradient
-
+    local gradient = {} -- empty gradient
 
     -- Default RGB values
     local r = 5 --Standing by
     local g = 0 
     local b = 0
+
+    -- Color adjustment functions
     function redUp()  if r < 5 then r = r + 1 end  end
     function redDn()  if r > 0 then r = r - 1 end  end
     function grnUp()  if g < 5 then g = g + 1 end  end
@@ -60,9 +61,10 @@ function rainbowGradient(zenith)
     end
 
     -- The zenith is always coded red (see default RGB)
+    -- (may change)
     gradient[zenith] = newColor(r, g, b)
     
-    -- Calc & populate the rest    
+    -- Calc & populate the rest of the gradient   
     for gs = 1, zenith - 1 do
         goal = progress + gradientStep
         while progress < goal do makeProgress() end

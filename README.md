@@ -15,7 +15,7 @@ lua main.lua 13
 ### How I work
 1. I create a numeric system using the argument as the digital base,
 representing digits greater than 9 as a letter between "A" and "T".<br>
-2. Next I generate a square matrix up to the "zenith" digit,
+2. Next I generate a square matrix up to the "zenith" (Z) digit,
 which is the greatest single digit in the number system.<br>
 3. Then I multiply each row by each column, using the mod (%) of the zenith 
 to calculate the digit sum for each product.<br>

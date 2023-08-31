@@ -1,4 +1,7 @@
 
+-- CLI
+
+
 -- TODO 
 -- print monochrome
 -- print greyscale

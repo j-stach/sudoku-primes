@@ -1,7 +1,10 @@
 
+-- This script handles representing the digitsum matrix via the console
+
 local digits = require("digits")
 local colors = require("pretty/colors")
 
+-- Generates the digitsum matrix according to the provided numeric base
 function generateMatrix(base)    
     local zenith = nil
     
@@ -28,6 +31,7 @@ function generateMatrix(base)
     return sumMatrix
 end
 
+-- Print the colored matrix to the console
 function printMatrix(sumMatrix)
     local zenith = 0
     for _ in pairs(sumMatrix) do zenith = zenith + 1 end

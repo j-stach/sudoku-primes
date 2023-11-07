@@ -9,7 +9,7 @@ function newColor(r, g, b)
         36 * r +    -- Red influence
          6 * g +    -- Green influence
              b      -- Blue influence
-    ).."m" -- >:)   -- Bad influence 
+    ).."m"  
 end
 
 -- Creates a rainbow color gradient scaled to the zenith digit
@@ -59,10 +59,6 @@ function rainbowGradient(zenith)
         end
         progress = progress + 1
     end
-
-    -- The zenith is always coded red (see default RGB)
-    -- (may change)
-    -- gradient[zenith] = newColor(r, g, b)
     
     -- Calc & populate the rest of the gradient   
     for gs = 1, zenith do

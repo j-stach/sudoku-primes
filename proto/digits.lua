@@ -1,10 +1,10 @@
 
--- This file holds information about the expandable number type
+-- This script holds information about the expandable number type
 
 -- The term "Zenith" is used below to describe the highest single-digit
 -- value within the decimal system for a given numeric base
 
--- later map dynaminally, new types?
+-- TODO map dynaminally, new types?
 function digits()
     local digits = {}
     digits[1 ] = "1"
@@ -57,7 +57,7 @@ function maxDigit()
     return maxDigit
 end
 
--- Coverts representation of number to expanded form
+-- Coverts representation of number to alternative base representation
 function expand(num)
     local maxDigit = maxDigit()
     local digits = digits()

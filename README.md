@@ -1,5 +1,5 @@
 # sudoku-primes
-Doing this to get some experience with Lua. May make it into a prime-verifying algorithm if it ends up being any good.<br>
+Doing this to get some experience with Lua. May make it into a prime-verifying algorithm if it ends up being any good.
 I am just a math hobbyist so please forgive me for any incorrect terminology. <br>
 
 ### Try me

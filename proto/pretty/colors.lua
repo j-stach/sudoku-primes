@@ -1,4 +1,4 @@
--- This file is for adding a splash of color to your matrix
+-- This script is for adding a splash of color to your matrix
 
 local digits = require("digits")
 
@@ -62,13 +62,13 @@ function rainbowGradient(zenith)
 
     -- The zenith is always coded red (see default RGB)
     -- (may change)
-    gradient[zenith] = newColor(r, g, b)
+    -- gradient[zenith] = newColor(r, g, b)
     
     -- Calc & populate the rest of the gradient   
-    for gs = 1, zenith - 1 do
+    for gs = 1, zenith do
+        gradient[gs] = newColor(r, g, b)
         goal = progress + gradientStep
         while progress < goal do makeProgress() end
-        gradient[gs] = newColor(r, g, b)
     end
 
     return gradient

@@ -2,8 +2,7 @@
 Doing this to get some experience with Lua. May make it into a prime-verifying algorithm if it ends up being any good.<br>
 
 ### Try me
-To setup, clone the repo to the desired location.<br>
-You should also install Lua if you don't already have it.<br>
+To setup, clone the repo; you should also install Lua if you don't already have it.<br>
 Also ensure that your terminal emulator supports 256 color values.<br>
 
 To use, cd into the `proto` directory, then run the script `main.lua` 

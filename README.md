@@ -16,10 +16,11 @@ lua main.lua 13
 1. I create a numeric system using the argument as the digital base,
 representing digits greater than 9 as a letter between 'A' and 'T'.<br>
 2. Next I generate a square matrix up to the "zenith" digit,
-which is the greatest single digit in the number system.<br>
-3. Then I multiply each row by each column, using the mod (%) of the zenith 
+which is the greatest single digit in the number system.
+(I stop here because the pattern repeats after reaching the zenith.)<br>
+4. Then I multiply each row by each column, using the mod (%) of the zenith 
 to calculate the digit sum for each product.<br>
-4. Finally I assign each digit a color from a gradient that corresponds
+5. Finally I assign each digit a color from a gradient that corresponds
 to its relative value, and print the matrix of color-coded digit sums.<br>
 
 ### Some observations to prove
@@ -33,5 +34,6 @@ diagonally from (1, zenith - 1) to (zenith - 1, 1).
 - This means at most only a quarter of the grid needs to be searched
 for the existence of the Z-digit.
 - (Say how rows can be excluded/ruled-out/inferred based on (n - 1) rule)
+- The pattern tiles endlessly.
 - Numbers which do not share a common factor with Z will repeat
 each digit exactly once in its sequence, hence the name "sudoku-primes".

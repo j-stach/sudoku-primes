@@ -19,7 +19,7 @@ representing digits greater than 9 as a letter between 'A' and 'T'.<br>
 which is the greatest single digit in the number system.
 (I stop here because the pattern repeats after reaching the zenith.)<br>
 4. Then I multiply each row by each column, using the mod (%) of the zenith 
-to calculate the digit sum for each product.<br>
+to calculate the digital root for each product.<br>
 5. Finally I assign each digit a color from a gradient that corresponds
 to its relative value, and print the matrix of color-coded digit sums.<br>
 
